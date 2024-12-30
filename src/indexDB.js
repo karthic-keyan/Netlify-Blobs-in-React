@@ -17,9 +17,6 @@ const IndexedDBBlob = () => {
         deployID : process.env.deployID
       });
       const { blobs } = store.list();
-      console.log('blobs', blobs)
-    // const store = getStore({ siteID: 'de897f5a-f03e-44e3-9d71-2f6c2c55a40c', token: 'nfp_DxkBw4dXtypyurZtwcTUt1oCH8UrK5SU76ad', name: 'foo' });
-    console.log('store', store)
       const getList = async () => {
         const { blobs } = await store.list();  
         console.log('blobs', blobs)
